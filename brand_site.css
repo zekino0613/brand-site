@@ -1,0 +1,168 @@
+    @charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #2b2a27;
+  font-family: 'Crimson Text', serif;
+
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #2d2d2d;
+    text-decoration: none;
+  }
+
+#mainvisual {
+    width: 90vw;
+    margin: 4% auto 0 auto;
+
+}
+
+header {
+    width: 90vw;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+
+
+}
+
+.site-title {
+    width: 11%;
+}
+
+header nav ul {
+    display: flex;
+    margin-top: 30px;
+    padding-left: 50px;
+    font-size: 0.9rem;
+}
+
+header nav li {
+    padding-left: 30px;   
+} 
+
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+
+.section  {
+    width: 95%;   
+    display: flex;
+    margin: 0 auto;
+    /* align-items: center; */
+}
+
+
+.section .concept-image  {
+    width: 50%;
+    object-fit: cover;
+}
+
+.section .concept-text .concept-title {
+    font-weight: normal;
+}
+
+.section .concept-text .title {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.section .concept-text {
+    width: 50%;
+    padding: 15% 8% 5% 6% ;
+}
+
+.section .concept-text p {
+    padding: 5% 14% 0 0;
+}
+
+#work {
+    margin-top: 60px;
+}
+
+
+#footer {
+    width: 95%;   
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+#footer .site-title {
+    width: 15%;
+}
+
+#footer p {
+    font-size: 0.8rem;
+    padding-top: 25px;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  #mainvisual {
+    width: 100%;
+    margin: 0;
+  }
+   /* 
+  heightをvhで指定することで、画面の高さを基準にした高さになる
+  */
+  #mainvisual img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  header {
+    width: 100%;
+    padding: 20px 18px;
+  }
+
+  
+ .site-title {
+    width: 25%;
+}
+
+ .section  {
+    flex-direction: column;  
+    padding: 0 10px;    
+ }
+ 
+ .section .concept-image  {
+    width: 100%;
+}
+
+.section .concept-text {
+    width: 100%;
+    margin: -7% -6%;
+}
+
+ #work {
+    flex-direction: column-reverse;
+}
+
+ #footer {
+    display: flex;
+    padding: 20px 10px 2px 10px;    
+}
+
+ #footer .site-title {
+    width: 25%;
+ }    
+
+}
